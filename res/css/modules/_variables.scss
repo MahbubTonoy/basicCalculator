@@ -1,3 +1,9 @@
+@font-face {
+ font-family: 'Calculator';
+ src: url(../../../ven/fonts/display.ttf); 
+}
+
+
 $body-background: #191919;
 
 $calculator-background: #2f2f2f;
@@ -6,4 +12,5 @@ $display-background: #202020;
 
 $btn-background: #555555; 
 $btn-color: #ddd;
+$display-text-color: $btn-color;
 $btn-result-background: #3a94e9;
