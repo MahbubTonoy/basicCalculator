@@ -1,4 +1,4 @@
-const display = document.querySelector(".display");
+const display = document.querySelector(".display span");
 let temp;
 
 //print values on calculator display
@@ -12,8 +12,18 @@ function btnInput(input) {
  print(temp);
 }
 
-//erase inputs from the display section.
 function erase() {
  temp = display.innerHTML.substring(0, display.innerHTML.length-1);
  print(temp);
+}
+
+function action() {
+ let equation = display.innerHTML;
+ temp = equation.replace("÷","/");
+ temp = temp.replace("×", "*");
+ print(eval(temp));
+}
+
+function reset() {
+ print("");
 }

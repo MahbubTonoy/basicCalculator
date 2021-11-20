@@ -49,6 +49,10 @@ body {
   padding: 10px;
 }
 
+.the_calculator .display span {
+  word-break: break-all;
+}
+
 .the_calculator .buttons {
   padding: 10px;
   display: -ms-grid;

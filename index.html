@@ -17,7 +17,9 @@
   </head>
   <body>
     <div class="the_calculator">
-      <div class="display"></div>
+      <div class="display">
+        <span></span>
+      </div>
       <div class="buttons">
         <button onclick="btnInput(7)" class="btn btn_7">7</button>
         <button onclick="btnInput(8)" class="btn btn_8">8</button>
@@ -36,10 +38,15 @@
 
         <button onclick="btnInput(0)" class="btn btn_0">0</button>
         <button onclick="btnInput('.')" class="btn btn_dot">.</button>
-        <button onclick="erase()" class="btn btn_00"><i class="fas fa-backspace"></i></button>
+        <button onclick="btnInput('00')" class="btn btn_00">00</button>
         <button onclick="btnInput('+')" class="btn btn_add">+</button>
+        
+        <button onclick="btnInput('(')" class="btn btn_0">(</button>
+        <button onclick="btnInput(')')" class="btn btn_dot">)</button>
+        <button onclick="erase()" class="btn btn_erase"><i class="fas fa-backspace"></i></button>
+        <button onclick="reset()" class="btn btn_trash"><i class="fas fa-trash"></i></button>
 
-        <button class="btn btn_result">=</button>
+        <button onclick="action()" class="btn btn_result">=</button>
       </div>
     </div>
 

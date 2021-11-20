@@ -23,6 +23,9 @@ body {
     align-items: center;
     justify-content: right;
     padding: 10px;
+    span {
+      word-break: break-all;
+    }
   }
   .buttons {
     padding: 10px;
@@ -51,5 +54,9 @@ body {
       opacity: 0.9;
       filter: brightness(100%);
     }
+    // .btn_erase {
+    //   grid-column-start: 3;
+    //   grid-column-end: 5;
+    // }
   }
 }
