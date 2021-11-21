@@ -49,6 +49,10 @@ body {
   letter-spacing: 0.3rem;
 }
 
+.the_calculator .title .title_bio {
+  opacity: 0.4;
+}
+
 .the_calculator .display {
   width: 100%;
   height: 100px;
