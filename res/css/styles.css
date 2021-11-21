@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: 'Calculator';
-  src: url(../../../ven/fonts/display.ttf);
+  src: url(../../../../ven/fonts/display.ttf);
 }
 
 @font-face {
   font-family: 'Casio';
-  src: url(../../../ven/fonts/casio.ttf);
+  src: url(../../../../ven/fonts/casio.ttf);
 }
 
 body {
