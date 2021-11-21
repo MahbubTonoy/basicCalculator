@@ -37,3 +37,25 @@ function erase() {
 function reset() {
  print("");
 }
+
+
+//keyboard capture
+document.addEventListener("keydown", (e)=>{
+ if(
+  (
+   e.key >= 0 && e.key <=9) ||
+   e.key == "+" ||
+   e.key == "-" ||
+   e.key == "/" ||
+   e.key == "*" ||
+   e.key == "(" ||
+   e.key == ")" 
+  ) {
+   temp = display.innerHTML+ e.key;
+   print(temp);
+ } else if(e.key == "Enter") {
+  action();
+ } else if(e.key == "Backspace") {
+  erase();
+ }
+});
