@@ -10,9 +10,14 @@
   src: url(../../../ven/fonts/display.ttf);
 }
 
+@font-face {
+  font-family: 'Casio';
+  src: url(../../../ven/fonts/casio.ttf);
+}
+
 body {
   height: 100vh;
-  background-color: #191919;
+  background-color: #ececec;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,18 +30,32 @@ body {
 }
 
 .the_calculator {
-  background-color: #2f2f2f;
+  background-color: #f5f5f5;
   border-radius: 5px;
-  min-width: 500px;
+  min-width: 400px;
+  overflow: hidden;
+  -webkit-box-shadow: 6px 6px 5px #ddd, -6px -6px 5px #ddd;
+          box-shadow: 6px 6px 5px #ddd, -6px -6px 5px #ddd;
+}
+
+.the_calculator .title {
+  padding: 25px 20px;
+  color: #404040;
+}
+
+.the_calculator .title .title_name {
+  font-size: 55px;
+  font-family: "Casio";
+  letter-spacing: 0.3rem;
 }
 
 .the_calculator .display {
   width: 100%;
-  height: 150px;
-  background-color: #202020;
-  color: #ddd;
-  font-family: 'Calculator';
-  font-size: 30px;
+  height: 100px;
+  background-color: #f5f5f5;
+  color: #404040;
+  font-family: "Calculator";
+  font-size: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +65,7 @@ body {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  padding: 10px;
+  padding: 15px;
 }
 
 .the_calculator .display span {
@@ -54,39 +73,43 @@ body {
 }
 
 .the_calculator .buttons {
-  padding: 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3] 0.5fr;
       grid-template-columns: repeat(3, 1fr) 0.5fr;
-  gap: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+  gap: 7px;
+  padding: 10px;
 }
 
 .the_calculator .buttons .btn {
+  background-color: #ffffff;
   padding: 15px 10px;
-  background-color: #555555;
-  color: #ddd;
-  border: 0;
+  color: #404040;
+  border: 0px;
   cursor: pointer;
-  font-size: 18px;
-  border-radius: 3px;
-}
-
-.the_calculator .buttons .btn:hover {
-  -webkit-filter: brightness(130%);
-          filter: brightness(130%);
+  font-size: 20px;
+  -webkit-box-shadow: 2px 2px 3px #ddd;
+          box-shadow: 2px 2px 3px #ddd;
 }
 
 .the_calculator .buttons .btn_result {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 5;
-  background: #3a94e9;
+  background: #fff;
+  margin-top: 10px 0;
 }
 
 .the_calculator .buttons .btn_result:hover {
   opacity: 0.9;
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
+}
+
+.the_calculator .buttons .btn_action {
+  background: #f5f5f5;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -2,15 +2,19 @@
  font-family: 'Calculator';
  src: url(../../../ven/fonts/display.ttf); 
 }
+@font-face {
+ font-family: 'Casio';
+ src: url(../../../ven/fonts/casio.ttf); 
+}
 
 
-$body-background: #191919;
+$body-background: #ececec;
 
-$calculator-background: #2f2f2f;
+$calculator-background: #f5f5f5;
 
-$display-background: #202020;
+$display-background: #f5f5f5;
 
-$btn-background: #555555; 
-$btn-color: #ddd;
+$btn-background: #ffffff; 
+$btn-color: #404040;
 $display-text-color: $btn-color;
-$btn-result-background: #3a94e9;
+$btn-result-background: #fff;
