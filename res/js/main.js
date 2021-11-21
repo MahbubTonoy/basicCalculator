@@ -57,5 +57,7 @@ document.addEventListener("keydown", (e)=>{
   action();
  } else if(e.key == "Backspace") {
   erase();
+ } else if(e.key == "c") {
+   reset();
  }
 });
